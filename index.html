@@ -15,6 +15,7 @@
             <ul id="right-ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="assets/PDFs/Resume - (Ezra Minty).pdf" target="_blank">Resume</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
             <button id="hamburger" @click="toggleBurger" v-if="burgerActice == false">
@@ -27,6 +28,7 @@
             <ul id="pageList">
                 <li><a href="#" @click.prevent="toggleBurger">Home</a></li>
                 <li><a href="#projects" @click="toggleBurger">Projects</a></li>
+                <li><a href="assets/PDFs/Resume - (Ezra Minty).pdf" target="_blank" @click="toggleBurger">Resume</a></li>
                 <li><a href="#contact" @click="toggleBurger">Contact Me</a></li>
                 <li><a href="#" @click.prevent="toggleBurger" style="color: red; font-weight: bold;">Close</a></li>
             </ul>
