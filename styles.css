@@ -12,10 +12,11 @@
     width: 100%;
 }
 
-body {
+#header {
     background-image: url(assets/images/background.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
+    height: 100%;
 }
 
 #nav-bar {
@@ -89,8 +90,9 @@ body {
 
 #slide-bar {
     background-color: #497c90;
-    float: right;
     height: 100%;
+    position: absolute;
+    right: 0%;
 }
 
 #slide-bar > ul {
@@ -123,13 +125,13 @@ body {
     
 }
 
-#closeList > li > a{
+/* #closeList > li > a{
     color: white;
     text-decoration: none;
     position: absolute;
-    bottom: 25px;
+    top: 1px;
     right: 70px;
-}
+} */
 
 #header {
     display: flex;
@@ -150,6 +152,7 @@ body {
 #headerText > p {
     margin: 20px 0px 0px 0px;
     font-size: 20px;
+    /* padding-bottom: 30px; */
 }
 
 #portfolioPicture {
@@ -163,14 +166,26 @@ body {
     }
 
     #portfolioPicture {
-        width: 0px;
+        width: auto;
+        max-width: 100%;
         margin: 80px 0px 0px 0px;
     }
 
     #headerText {
-        margin: 120px 0px 0px 0px;
-        padding-left: 0px;
-        width: 200px;
+        margin: 120px 100px 0px 100px;
+        width: auto;
+        /* max-width: 100%; */
+
+    }
+    #headerText > h2 {
+        font-size: 40px;
+    }
+    
+    #headerText > p {
+        margin: 20px 0px 0px 0px;
+        font-size: 13px;
+        padding-bottom: 30px;
+
     }
 
 }
@@ -194,6 +209,8 @@ body {
     
     #headerText > p {
         margin: 10px 0px 0px 0px;
+        padding-bottom: 30px;
+
     }
     
 }
@@ -212,10 +229,6 @@ body {
 
     #headerText > h2 {
         font-size: 30px;
-    }
-    
-    #headerText > p {
-        margin: 10px 0px 0px 0px;
     }
 }
 

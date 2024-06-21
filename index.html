@@ -21,19 +21,19 @@
                 <div id="bar"></div>
             </button>
         </nav>
-
-
+        
         <div id="slide-bar" v-if="burgerActice">
             
             <ul id="pageList">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact Me</a></li>
+                <li><a href="#" @click.prevent="toggleBurger" style="color: red; font-weight: bold;">Close</a></li>
             </ul>
 
-            <ul id="closeList">
+            <!-- <ul id="closeList">
                 <li id="close"><a href="#" @click.prevent="toggleBurger">Close</a></li>
-            </ul>
+            </ul> -->
         </div>
 
         <div id="header">
