@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    
+
+}
+
+body {
+    background-image: url(assets/images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#nav-bar {
+    background-color: #19323C;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right-ul {
+    display: inline;
+    padding: 20px;
+}
+
+#right-ul > li {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+#left-ul {
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+
+}
+
+#right-ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+
+
+}
+
+#left-ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+
+}
+
+#nav-bar > ul > li > a:hover{
+    font-weight: bold;
+}
+
+#hamburger {
+    display: block;
+    position: relative;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    /* background-color: none; */
+    background-color: #19323C;
+    outline: none;
+    border: none;
+    margin: 10px;
+    margin-right: 25px;
+}
+
+#hamburger #bar, #hamburger:after, #hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+
+#slide-bar {
+    background-color: #497c90;
+    float: right;
+    height: 100%;
+}
+
+#slide-bar > ul {
+    /* display: ; */
+    list-style-type: none;
+    margin: 20px 0px 0px 10px;
+}
+
+#pageList > li {
+    padding: 40px 50px 0px 50px;
+    text-align: center;
+}
+
+#pageList > li > a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#slide-bar > ul > li > a:hover {
+    font-weight: bold;
+}
+
+#closeList {
+}
+
+#closeList > li {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+#closeList > li > a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+    right: 70px;
+}
+
+#header {
+    display: flex;
+    color: #19323C;
+
+}
+
+#headerText {
+    margin: 120px 0px 0px 0px;
+    padding-left: 60px;
+    width: 600px;
+}
+
+#headerText > h2 {
+    font-size: 70px;
+}
+
+#headerText > p {
+    margin: 20px 0px 0px 0px;
+    font-size: 20px;
+}
+
+#portfolioPicture {
+    width: 400px;
+    margin: 80px 0px 0px 60px;
+}
+
+@media screen and (max-width: 430px){
+    #right-ul {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 431px){
+    #hamburger {
+        display: none;
+    }
+}

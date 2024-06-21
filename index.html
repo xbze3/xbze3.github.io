@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ezra Minty</title>
+</head>
+<body>
+    <div id="app">
+
+        <nav id="nav-bar">
+            <ul id="left-ul">
+                <li><a href="#">Ezra Minty</a></li>
+            </ul>
+            <ul id="right-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+            <button id="hamburger" @click="toggleBurger" v-if="burgerActice == false">
+                <div id="bar"></div>
+            </button>
+        </nav>
+
+
+        <div id="slide-bar" v-if="burgerActice">
+            
+            <ul id="pageList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+
+            <ul id="closeList">
+                <li id="close"><a href="#" @click.prevent="toggleBurger">Close</a></li>
+            </ul>
+        </div>
+
+        <div id="header">
+            <div id="headerImage">
+                <img src="assets/images/portfolioPicture.png" alt="Developer Picture" id="portfolioPicture">
+            </div>
+            <div id="headerText">
+                <h2>Ezra Minty</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        let app = Vue.createApp({
+            data() {
+                return {
+                    text: 'Hello',
+                    burgerActice: false
+                }
+            },
+            components: ['nav-bar'],
+            methods: {
+                toggleBurger() {
+                    this.burgerActice = !this.burgerActice
+                    console.log(this.burgerActice)
+                }
+            }
+        })
+
+        app.mount('#app')
+    </script>
+</body>
+</html>
