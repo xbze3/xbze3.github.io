@@ -180,7 +180,7 @@
     background-image: url(assets/images/background.png);
     /* background-repeat: no-repeat; */
     background-position: center;
-    text-align: center;
+    width: 100%;
 
 }
 
@@ -271,6 +271,19 @@
         margin: 10px 0px 10px 0px;
 
     }
+
+    #projectCards {
+        text-align: center;
+    }
+
+    #card {
+        margin: 10px 10px 20px 10px;
+    }
+
+    #cardLink {
+        margin: 0px 0px 0px 0px;
+
+    }
     
 }
 
@@ -293,7 +306,6 @@
 
     #projectCards {
         text-align: center;
-    
     }
 }
 
@@ -338,7 +350,7 @@
         text-align: center;
         align-items: center;
         padding-bottom: 100px;
-        height: 550px;
+        height: 600px;
     }
 
     #headerText {
