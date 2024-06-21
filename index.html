@@ -14,8 +14,8 @@
             </ul>
             <ul id="right-ul">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
             <button id="hamburger" @click="toggleBurger" v-if="burgerActice == false">
                 <div id="bar"></div>
@@ -25,9 +25,9 @@
         <div id="slide-bar" v-if="burgerActice">
             
             <ul id="pageList">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#" @click.prevent="toggleBurger">Home</a></li>
+                <li><a href="#projects" @click="toggleBurger">Projects</a></li>
+                <li><a href="#contact" @click="toggleBurger">Contact Me</a></li>
                 <li><a href="#" @click.prevent="toggleBurger" style="color: red; font-weight: bold;">Close</a></li>
             </ul>
 
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <div id="separator" v-if="!burgerActice">
+        <div id="projects" class="separator" v-if="!burgerActice">
             <h2>Projects</h2>
         </div>
 
@@ -64,7 +64,7 @@
             </a>
         </div>
 
-        <div id="separator">
+        <div id="contact" class="separator" v-if="!burgerActice">
             <h2>Contact Me</h2>
         </div>
 
