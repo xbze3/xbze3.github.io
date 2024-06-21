@@ -36,7 +36,7 @@
             </ul> -->
         </div>
 
-        <div id="header">
+        <div id="header" v-if="!burgerActice">
             <div id="headerImage">
                 <img src="assets/images/portfolioPicture.png" alt="Developer Picture" id="portfolioPicture">
             </div>
@@ -44,6 +44,28 @@
                 <h2>Ezra Minty</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+        </div>
+
+        <div id="separator" v-if="!burgerActice">
+            <h2>Projects</h2>
+        </div>
+
+        <div id="projectCards" v-if="!burgerActice">
+
+            <a href="#" id="cardLink" v-for="project in projectArray">
+                <div id="card">
+                    <div id="imgDiv">
+                        <img src="https://th.bing.com/th/id/R.ebe9c33165afee33bf73975531779d0d?rik=0qpIE1Xgypj4ZA&riu=http%3a%2f%2fstatic6.businessinsider.com%2fimage%2f55ae6345371d22dc0b8b75e7-2673-2005%2fshutterstock_266369681.jpg&ehk=wOPe04%2bRfnfHQAnc8wibkjLtUU%2bKJ1cjm3TSP4T6w0g%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    </div>
+                    <div id="textDiv">
+                        <h2>{{ project }}</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div id="separator">
+            <h2>Contact Me</h2>
         </div>
 
     </div>
@@ -55,7 +77,8 @@
             data() {
                 return {
                     text: 'Hello',
-                    burgerActice: false
+                    burgerActice: false,
+                    projectArray: ["Spotil", "News Scraper GUI", "News Scraper CLI", "TODO Website", "Student Management System", "Web Force", "IP Force"]
                 }
             },
             components: ['nav-bar'],

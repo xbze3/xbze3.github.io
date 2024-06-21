@@ -16,7 +16,7 @@
     background-image: url(assets/images/background.png);
     /* background-repeat: no-repeat; */
     background-position: center;
-    height: 100%;
+    height: 95%;
 }
 
 #nav-bar {
@@ -160,7 +160,67 @@
     margin: 80px 0px 0px 60px;
 }
 
+#separator {
+    width: 100%;
+    text-align: center;
+    background-color: #19323C;
+    color: white;
+}
+
+#separator > h2{
+    padding: 20px 0px 20px 0px;
+    /* margin-bottom: 30px; */
+    text-align: center;
+}
+
+#projectCards {
+    /* background-color: red; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-image: url(assets/images/background.png);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    text-align: center;
+
+}
+
+#cardLink {
+    text-decoration: none;
+    color: white;
+    background-color: aqua;
+    margin: 30px 0px 0px 30px;
+
+}
+
+#card {
+    background-color: #19323C;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 15px 0px 15px 0px;
+
+}
+
+#textDiv {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgDiv {
+    /* display: flex; */
+}
+
+#imgDiv > img {
+    width: 350px;
+    height: 200px;
+}
+
+
 @media screen and (max-width: 430px){
+
+
     #right-ul {
         display: none;
     }
@@ -184,7 +244,6 @@
     #headerText > p {
         margin: 20px 0px 0px 0px;
         font-size: 13px;
-        padding-bottom: 30px;
 
     }
 
@@ -201,6 +260,7 @@
         margin: 120px 0px 0px 0px;
         padding-left: 20px;
         width: 600px;
+        
     }
 
     #headerText > h2 {
@@ -208,14 +268,14 @@
     }
     
     #headerText > p {
-        margin: 10px 0px 0px 0px;
-        padding-bottom: 30px;
+        margin: 10px 0px 10px 0px;
 
     }
     
 }
 
 @media screen and (max-width: 940px){
+
     #portfolioPicture {
         width: 400px;
         margin: 40px 0px 0px 5px;
@@ -230,9 +290,44 @@
     #headerText > h2 {
         font-size: 30px;
     }
+
+    #projectCards {
+        text-align: center;
+    
+    }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 414px){
+    #header {
+        text-align: center;
+
+    }
+
+    #card {
+        margin: 10px 0px 20px 0px;
+        width: auto;
+    }
+
+    #cardLink {
+        margin: 0px 0px 0px 0px;
+
+    }
+
+}
+
+@media screen and (min-height: 630px){
+    #header {
+        height: 630px;
+    }
+}
+
+/* @media screen and (max-width: 800px){
+    #header {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 920px){
     #portfolioPicture {
         width: 400px;
         margin: 40px 0px 0px 0px;
@@ -242,7 +337,8 @@
         display: inline-block;
         text-align: center;
         align-items: center;
-
+        padding-bottom: 100px;
+        height: 550px;
     }
 
     #headerText {
