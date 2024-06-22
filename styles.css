@@ -187,7 +187,7 @@
 #cardLink {
     text-decoration: none;
     color: white;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin: 30px 0px 0px 30px;
 
 }
@@ -216,6 +216,49 @@
     width: 350px;
     height: 200px;
 }
+
+#contactDiv {
+    background-image: url(assets/images/background.png);
+    background-position: center;
+    width: 100%;
+    
+    /* padding: 40px 0px 0px 40px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contactDiv > div {
+    padding: 25px 0px 25px 0px;
+    display: flex;
+
+}
+
+#contactDiv > div > h2 {
+    margin: 15px;
+
+}
+
+#contactDiv > div > h2 > a {
+    color: #19323C;
+    text-decoration: none;
+
+}
+
+/* #instaDiv {
+    padding: 50px 0px 50px 50px;
+    width: 100%;
+}
+
+#emailDiv {
+    padding: 50px 0px 50px 50px;
+    width: 100%;
+}
+
+#githubDiv {
+    padding: 50px 0px 50px 30px;
+    width: 100%;
+} */
 
 
 @media screen and (max-width: 496.5px){
@@ -249,7 +292,7 @@
 
 }
 
-@media screen and (max-width: 1145px){
+@media screen and (max-width: 2000px){
 
     #portfolioPicture {
         width: 400px;
@@ -327,17 +370,22 @@
 
 }
 
+@media screen and (max-width: 730px){
+    #contactDiv {
+        display: inline-block;
+    }
+
+    #contactDiv > div {
+        justify-content: center;
+    }
+
+}
+
 @media screen and (min-height: 630px){
     #header {
         height: 630px;
     }
 }
-
-/* @media screen and (max-width: 800px){
-    #header {
-        display: none;
-    }
-} */
 
 @media screen and (max-width: 920px){
     #portfolioPicture {
