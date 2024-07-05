@@ -307,12 +307,12 @@
     }
 
     #headerText > h2 {
-        font-size: 40px;
+        font-size: 70px;
     }
     
     #headerText > p {
-        margin: 10px 0px 10px 0px;
-
+        margin: 30px 0px 10px 0px;
+        font-size: 25px;
     }
 
     #projectCards {
@@ -325,6 +325,7 @@
 
     #cardLink {
         margin: 0px 0px 0px 0px;
+
 
     }
     
@@ -344,7 +345,7 @@
     }
 
     #headerText > h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     #projectCards {
