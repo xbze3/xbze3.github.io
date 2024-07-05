@@ -116,9 +116,6 @@
     font-weight: bold;
 }
 
-#closeList {
-}
-
 #closeList > li {
     list-style-type: none;
     text-align: center;
@@ -206,10 +203,6 @@
     height: 70px;
     justify-content: center;
     align-items: center;
-}
-
-#imgDiv {
-    /* display: flex; */
 }
 
 #imgDiv > img {
