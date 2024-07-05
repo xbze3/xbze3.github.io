@@ -276,17 +276,17 @@
 
     #headerText {
         margin: 120px 100px 0px 100px;
-        width: auto;
+        width: 90%;
         /* max-width: 100%; */
 
     }
     #headerText > h2 {
-        font-size: 40px;
+        font-size: 80px;
     }
     
     #headerText > p {
         margin: 20px 0px 0px 0px;
-        font-size: 13px;
+        font-size: 20px;
 
     }
 
