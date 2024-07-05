@@ -261,7 +261,7 @@
 } */
 
 
-@media screen and (max-width: 496.5px){
+@media screen and (max-width: 545px){
 
 
     #right-ul {
@@ -412,7 +412,7 @@
 
 }
     
-@media screen and (min-width: 496.5px){
+@media screen and (min-width: 545px){
     #hamburger {
         display: none;
     }
